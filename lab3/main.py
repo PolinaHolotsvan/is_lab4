@@ -1,7 +1,7 @@
 import math
 import random
 
-from csv_db import export_day_to_csv, export_schedule_to_csv
+from csv_db import export_schedule_to_csv
 from lesson import Lesson
 
 from lists import SUBJECTS, ROOMS, TIMESLOTS, GROUPS, LECTURERS
@@ -145,12 +145,12 @@ def generate_schedule(logging=False):
     return best_schedule
 
 
-print("Generating week 1")
+print("Generating WEEK 1")
 
 best_schedule1 = generate_schedule()
 print(best_schedule1)
 
-print("Generating week 2")
+print("Generating WEEK 2")
 best_schedule2 = generate_schedule()
 print(best_schedule2)
 
